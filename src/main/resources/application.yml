@@ -1,0 +1,12 @@
+external:
+  http-client-config:
+    read-timeout: 31
+    connect-timeout: 5
+
+internal:
+#  Related configs that alter the same object need to be grouped together so the proper class can be made
+#  and set at one time rather than trying to set properties separately and checking each time
+  http-client-config:
+    read-timeout: 10
+    connect-timeout: 1
+
